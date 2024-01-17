@@ -10,6 +10,7 @@ body{
     background-color: #333;
     overflow: hidden;
     left: 0%;
+    top: 0%;
 }
 
 .topnav a {
@@ -33,14 +34,33 @@ body{
         color: black;
     }
 
+#java{
+    position:fixed;
+    top: 10%;
+
+
+
+}
+
+    /* CSGO PAGE */
+
+    #map{
+
+        position: fixed;
+        top: 20%;
+       
+
+    }
 
     /*   HPR VIDEO   */
 
 
     .hprvideo{
         position: fixed;
-        top:10%;
+        top:30%;
 
 
 
     }
+
+
