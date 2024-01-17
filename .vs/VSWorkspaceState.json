@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\media",
+    "\\media\\video",
+    "\\pages"
   ],
-  "SelectedNode": "\\csgo.html",
+  "SelectedNode": "\\pages\\pythonexample.html",
   "PreviewInSolutionExplorer": false
 }
