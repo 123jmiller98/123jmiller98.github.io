@@ -8,9 +8,10 @@ body{
     width: 100%;
     position: fixed;
     background-color: #333;
-    overflow: hidden;
+    overflow:visible;
     left: 0%;
     top: 0%;
+    
 }
 
 .topnav a {
@@ -33,6 +34,54 @@ body{
         background-color: lightblue;
         color: black;
     }
+
+
+.welcome {
+    display: block;
+    float: right; 
+    margin: 5% 8% 0 0;
+    width: 60%;
+    text-align: left;
+    font-size: larger;
+}
+
+h1 {
+    text-align:center;
+    color: blue;
+}
+
+
+.about {
+    
+    display: block;
+    border: 2px dashed gray;
+    float: left;
+    margin: 5% 0 0 0;
+    padding: 5px;
+    width: 25%;
+}
+#me {
+    float: left;
+    margin: 5px 20px 20px 5px;
+    width: 30%;
+    border-radius: 25px;
+    border: 3px solid black;
+    
+}
+h2 {
+    text-align: center;
+    padding: 30% 0 0 0;
+}
+
+
+#aboutMe {
+    text-align: justify;
+    font-size: medium;
+    margin: 10px;
+}
+
+
+
 
 #java{
     position:fixed;
