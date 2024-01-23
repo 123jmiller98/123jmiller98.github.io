@@ -41,12 +41,13 @@ body{
 h1 {
     text-align:justify;
     margin: 10px;
-    color: blue;
+    color: black;
 }
 h2 {
     text-align: left;
     font-size: large;
     padding: 0;
+   
 }
 
 /*my Porfolio side*/
