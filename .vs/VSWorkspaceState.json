@@ -4,8 +4,11 @@
     "\\css",
     "\\media",
     "\\media\\video",
-    "\\pages"
+    "\\pages",
+    "\\projects",
+    "\\projects\\Java",
+    "\\scripts"
   ],
-  "SelectedNode": "\\css\\styles.css",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
