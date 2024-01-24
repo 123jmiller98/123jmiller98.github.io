@@ -1,0 +1,59 @@
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!--
+# OUTPUT FORMATTING CODES:
+# c  :  category of the logging event
+# C  :  fully qualified class name  (WARNING: SLOW)
+# d  :  date
+# F  :  file name which issued logging request  (WARNING: SLOW)
+# l  :  location which generated logging request
+# L  :  line number which generated logging request  (WARNING: SLOW)
+# m  :  message
+# M  :  class method which generated logging request  (WARNING: SLOW)
+# n  :  new line/carriage return/line feed
+# p  :  priority
+# r  :  # milliseconds since program started
+# t  :  thread name
+
+# The root logger uses the appenders called A1 and A2. Since no level is specified, note the empty string between the comma (",") and the
+# equals sign ("="), the level of the root logger remains untouched. Log4j always initializes the level for the root logger to
+# DEBUG. The root logger is the only logger that has a default level. By default, all other loggers do not have an assigned level,
+# such that they inherit their level instead.
+-->
+<log4j:configuration debug="false" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="info" />
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="fileAppender" class="org.apache.log4j.FileAppender">
+        <param name="Threshold" value="error" />
+        <param name="File" value="mytesterror.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="rollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="debug" />
+        <param name="File" value="mytestrolling.log"/>
+        <param name="MaxFileSize" value="500KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <root>
+        <priority value ="debug"></priority>
+        <appender-ref ref="console"></appender-ref>
+        <appender-ref ref="fileAppender"></appender-ref>
+        <appender-ref ref="rollingFileAppender"></appender-ref>
+    </root>
+
+</log4j:configuration>
