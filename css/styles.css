@@ -114,9 +114,11 @@ h2 {
 
 
 
-    .btn:hover {
+.btn:hover {
         background-color: RoyalBlue;
-    }
+ }
+
+
 #java{
     position:fixed;
     top: 10%;
