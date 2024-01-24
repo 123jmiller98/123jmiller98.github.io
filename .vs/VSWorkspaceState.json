@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
     "\\pages",
+    "\\pages\\JavaSubPages",
+    "\\pages\\JavaSubPages\\src",
     "\\projects",
     "\\projects\\Java",
     "\\projects\\Java\\csis222final",
     "\\projects\\Java\\csis222final\\src",
-    "\\projects\\Java\\csis222final\\src\\edu",
-    "\\projects\\Java\\csis222final\\src\\edu\\mcckc",
-    "\\projects\\Java\\csis222final\\src\\edu\\mcckc\\dao",
     "\\scripts"
   ],
-  "SelectedNode": "\\projects\\Java\\csis222final\\src\\edu\\index.html",
+  "SelectedNode": "\\pages\\JavaSubPages\\src\\tests.html",
   "PreviewInSolutionExplorer": false
 }
