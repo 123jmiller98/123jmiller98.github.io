@@ -9,14 +9,23 @@
 <body>
 
     <nav class="fileNav">
-        <a class="active" href="../../../projects/Java/csis222final/src/main/Main.java">Main.java</a>
+        <a class="active" href="../../../projects/Java/csis222final/src/main/Main.java" onclick="setUrl('../pages/JavaSubPages/src/main.html')">Main.java</a>
         
 
 
 
     </nav>
 
+    <script>
 
+        function setUrl(url) {
+            localStorage.setItem('url', url);
+
+            window.location.href = "../../javaExample.html";
+
+        }
+
+    </script>
 
 </body>
 </html>

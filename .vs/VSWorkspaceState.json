@@ -6,11 +6,11 @@
     "\\pages\\JavaSubPages",
     "\\pages\\JavaSubPages\\src",
     "\\projects",
-    "\\projects\\Java",
     "\\projects\\Java\\csis222final",
     "\\projects\\Java\\csis222final\\src",
+    "\\projects\\Java\\csis222final\\src\\dao",
     "\\scripts"
   ],
-  "SelectedNode": "\\css\\styles.css",
+  "SelectedNode": "\\pages\\JavaSubPages\\src\\tests.html",
   "PreviewInSolutionExplorer": false
 }

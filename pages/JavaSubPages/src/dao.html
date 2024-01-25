@@ -3,26 +3,37 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../../css/styles.css">
     <title></title>
+    <!-- <script src="../../../scripts/javanav.js" defer></script>-->
+    
 </head>
 <body>
-    
+
     <nav class="fileNav">
-        <a class="active" href="../../../projects/Java/csis222final/src/dao/ABaseDao.java">ABaseDao.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/ABaseMapper.java">ABaseMapper.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/AppException.java">AppException.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/Check.java">Check.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/CheckDao.java">CheckDao.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/CheckMapper.java">CheckMapper.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/ConfigProperties.java">ConfigProperties.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/IPersistable.java">IPersistable.java</a>
-        <a href="../../../projects/Java/csis222final/src/dao/SetupDao.java">SetupDao.java</a>
+        <a class="active" href="../../../projects/Java/csis222final/src/dao/ABaseDao.java" onclick="setUrl('../pages/JavaSubPages/src/dao.html')">ABaseDao.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/ABaseMapper.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">ABaseMapper.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/AppException.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">AppException.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/Check.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">Check.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/CheckDao.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">CheckDao.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/CheckMapper.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">CheckMapper.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/ConfigProperties.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">ConfigProperties.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/IPersistable.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">IPersistable.java</a>
+        <a href="../../../projects/Java/csis222final/src/dao/SetupDao.java"onclick="setUrl('../pages/JavaSubPages/src/dao.html')">SetupDao.java</a>
 
 
     </nav>
 
+    <script>
 
-    
+        function setUrl(url) {
+            localStorage.setItem('url', url);
+
+            window.location.href = "../../javaExample.html";
+
+        }
+
+    </script>
+
 </body>
 </html>

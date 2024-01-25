@@ -9,16 +9,25 @@
 <body>
 
     <nav class="fileNav">
-        <a class="active" href="../../../projects/Java/csis222final/src/gui/FrameGui.java">GrameGui.java</a>
-        <a href="../../../projects/Java/csis222final/src/gui/PanelEdit.java">PanelEdit.java</a>
-        <a href="../../../projects/Java/csis222final/src/gui/PanelSave.java">PanelSave.java</a>
-        <a href="../../../projects/Java/csis222final/src/gui/PanelView.java">PanelView.java</a>
-        
+        <a class="active" href="../../../projects/Java/csis222final/src/gui/FrameGui.java" onclick="setUrl('../pages/JavaSubPages/src/gui.html')">GrameGui.java</a>
+        <a href="../../../projects/Java/csis222final/src/gui/PanelEdit.java" onclick="setUrl('../pages/JavaSubPages/src/gui.html')">PanelEdit.java</a>
+        <a href="../../../projects/Java/csis222final/src/gui/PanelSave.java" onclick="setUrl('../pages/JavaSubPages/src/gui.html')">PanelSave.java</a>
+        <a href="../../../projects/Java/csis222final/src/gui/PanelView.java" onclick="setUrl('../pages/JavaSubPages/src/gui.html')">PanelView.java</a>
+
 
 
     </nav>
 
+    <script>
 
+    function setUrl(url) {
+        localStorage.setItem('url', url);
+
+        window.location.href = "../../javaExample.html";
+
+    }
+
+    </script>
 
 </body>
 </html>

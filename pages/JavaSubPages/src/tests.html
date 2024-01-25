@@ -9,15 +9,24 @@
 <body>
 
     <nav class="fileNav">
-        <a class="active" href="../../../projects/Java/csis222final/src/tests/CheckDaoTests.java">CheckDaoTests.java</a>
-        <a href="../../../projects/Java/csis222final/src/tests/CheckTests.java">PanelEdit.java</a>
-        
+        <a class="active" href="../../../projects/Java/csis222final/src/tests/CheckDaoTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">CheckDaoTests.java</a>
+        <a href="../../../projects/Java/csis222final/src/tests/CheckTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">PanelEdit.java</a>
+
 
 
 
     </nav>
 
+    <script>
 
+    function setUrl(url) {
+        localStorage.setItem('url', url);
+
+        window.location.href = "../../javaExample.html";
+
+    }
+
+    </script>
 
 </body>
 </html>
