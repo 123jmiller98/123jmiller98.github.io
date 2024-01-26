@@ -20,7 +20,6 @@ function updateDiv() {
     globalUrl = localStorage.getItem('url');
     if (globalUrl == null) {
         newurl = startUrl;
-        calledfromblank();
     } else {
         newurl = globalUrl;
     }
@@ -32,8 +31,3 @@ function updateDiv() {
 }
 
 
-
-function calledfromblank() {
-    window.print();
-
-}
