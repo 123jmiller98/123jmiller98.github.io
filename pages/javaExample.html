@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
     <script src="../scripts/javanav.js" defer></script>
 </head>
@@ -19,27 +20,26 @@
         <a href="csgoExample.html">CSGO</a>
     </nav>
 
-    <h1>Java Project</h1>
-    <h2>Check Deposit Database</h2>
+    <div class="projectTitle">
+        <h1>Java Project</h1>
+        <h2>Check Deposit Database</h2>
+    </div>
 
 
-    <!---
-            <nav class="testnav">
-        <a class="active" href="../projects/Java/csis222final/src/edu/mcckc/main/Main.java">Test1</a>
-        <a href="../projects/Java/csis222final/src/edu/mcckc/dao/ABaseDao.java">test2</a>
-        <a href="../projects/Java/csis222final/src/edu/mcckc/dao/ABaseMapper.java">test3</a>
-
-    </nav>
-
-            -->
     <nav class="javanav">
+        <a href="javaExample.html" onclick="setUrl('JavaSubPages/index.html')">
+            <img src="../media/pictures/src.png" height="75" width="75" alt="src" />
+        </a>
+        <a href="#" onclick="updateDiv()">
 
-        <a href="javaExample.html">SRC</a>
-        <a href="#" onclick="updateDiv()">BACK</a>
-
-
+            <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
+        </a>
+        <a href="../projects/Java/csis222final.zip" download>
+            <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
+        </a>
     </nav>
-    
+
+
 
     <div id="java">
 
@@ -47,12 +47,12 @@
         <!-- <embed src="FrameGui.java" width="500" height="400"></embed>-->
         <!--  <object data="csis222final" width="800" height="600"></object>-->
         <!-- -->
-        
-        
-        <embed id="javaembed" src="#" >
+
+
+        <embed id="javaembed" src="#">
 
     </div>
-    
+
 </body>
 
 </html>
