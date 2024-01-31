@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
     <script src="../scripts/javanav.js" defer></script>
+    <script src="../scripts/slideshow.js" defer></script>
 </head>
 <body>
 
@@ -20,38 +22,112 @@
         <a href="csgoExample.html">CSGO</a>
     </nav>
 
-    <div class="projectTitle">
-        <h1>Java Project</h1>
-        <h2>Check Deposit Database</h2>
+
+    <div class="navContainer">
+
+        <div id="sourceCode">
+
+            <h1>Source Code</h1>
+
+        </div>
+
+
+        <nav class="javanav">
+            <a href="javaExample.html" onclick="setUrl('JavaSubPages/index.html')">
+                <img src="../media/pictures/src.png" height="75" width="75" alt="src" />
+            </a>
+            <a href="#" onclick="updateDiv()">
+
+                <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
+            </a>
+            <a href="../projects/Java/csis222final.zip" download>
+                <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
+            </a>
+        </nav>
+
+
+
+        <div id="java">
+
+            <!-- <iframe src="FrameGui.java"></iframe> -->
+            <!-- <embed src="FrameGui.java" width="500" height="400"></embed>-->
+            <!--  <object data="csis222final" width="800" height="600"></object>-->
+            <!-- -->
+
+
+            <embed id="javaembed" src="#">
+
+        </div>
+
     </div>
 
 
-    <nav class="javanav">
-        <a href="javaExample.html" onclick="setUrl('JavaSubPages/index.html')">
-            <img src="../media/pictures/src.png" height="75" width="75" alt="src" />
-        </a>
-        <a href="#" onclick="updateDiv()">
-
-            <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
-        </a>
-        <a href="../projects/Java/csis222final.zip" download>
-            <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
-        </a>
-    </nav>
 
 
 
-    <div id="java">
+    <!--- SLIDESHOW -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-        <!-- <iframe src="FrameGui.java"></iframe> -->
-        <!-- <embed src="FrameGui.java" width="500" height="400"></embed>-->
-        <!--  <object data="csis222final" width="800" height="600"></object>-->
-        <!-- -->
+        <div class="projectTitle">
+            <h1>Check Deposit Database</h1>
+
+        </div>
 
 
-        <embed id="javaembed" src="#">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java1.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java2.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java3.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java4.png" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java5.png" style="width:100%">
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+    <!--
+            <div class="examplePageVideo">
+        <video  width="600" height="200" controls>
+            <source src="../media/video/ResumeJava.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+
 
     </div>
+
+
+            -->
+
+
+
 
 </body>
 

@@ -12,22 +12,33 @@ function useSrc() {
 }
 
 function setUrl(url) {
+
     localStorage.setItem('url', url);
 }
 
 function updateDiv() {
+    try {
 
-    globalUrl = localStorage.getItem('url');
-    if (globalUrl == null) {
-        newurl = startUrl;
-    } else {
-        newurl = globalUrl;
+        globalUrl = localStorage.getItem('url');
+        if (globalUrl == null) {
+            newurl = startUrl;
+        } else {
+            newurl = globalUrl;
+        }
+
+        document.getElementById("javaembed").src = newurl;
+        document.getElementById("javaembed").innerHTML.reload;
+
+        localStorage.setItem('url', startUrl);
+
+    } catch (error)
+    {
+
+        window.alert("Please enable cookies for full site functionality");
+
+
     }
     
-    document.getElementById("javaembed").src = newurl;
-    document.getElementById("javaembed").innerHTML.reload;
-
-    localStorage.setItem('url', startUrl);
 }
 
 

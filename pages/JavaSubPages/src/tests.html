@@ -3,14 +3,18 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../../css/styles.css">
     <title></title>
 </head>
 <body>
 
-    <nav class="fileNav">
-        <a class="active" href="../../../projects/Java/csis222final/src/tests/CheckDaoTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">CheckDaoTests.java</a>
-        <a href="../../../projects/Java/csis222final/src/tests/CheckTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">PanelEdit.java</a>
+    <nav class="filenav1">
+        <a class="active" href="../../../projects/Java/csis222final/src/tests/CheckDaoTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">
+            <img src="../../../media/pictures/java.png" height="20" width="20" alt="main" /> <div id="filetext"> CheckDaoTests.java</div>
+        </a>
+        <a href="../../../projects/Java/csis222final/src/tests/CheckTests.java" onclick="setUrl('../pages/JavaSubPages/src/tests.html')">
+            <img src="../../../media/pictures/java.png" height="20" width="20" alt="main" /> <div id="filetext"> PanelEdit.java</div>
+        </a>
 
 
 
@@ -19,12 +23,13 @@
 
     <script>
 
-    function setUrl(url) {
-        localStorage.setItem('url', url);
+        function setUrl(url) {
 
-        window.location.href = "../../javaExample.html";
 
-    }
+            localStorage.setItem('url', url);
+            window.location.href = "../../javaExample.html";
+
+        }
 
     </script>
 
