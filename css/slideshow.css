@@ -4,22 +4,40 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 50%;
-    overflow:clip;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+    width: 52%;
+    overflow: visible;
     float: right;
     position: relative;
-    margin: 70px 5% 0 25%;
+    margin: 70px 2% 0 2%;
+    padding: 5px;
 }
 
 .projectTitle {
-    position:relative;
-    left: -1%;
+
+
     margin: 0 0 20px 0;
+}
+#shiftRight{
+    margin: 0 1% 0 1%;
+    
 }
 
 /* Hide the images by default */
 .mySlides {
+    margin: 1%;
     display: none;
+  
+}
+
+img{
+
+  
 }
 
 /* Next & previous buttons */
@@ -39,8 +57,14 @@
 }
 
 /* Position the "next button" to the right */
+
+.prev{
+    left:1%;
+}
+
+
 .next {
-    right: 0;
+    right: 1%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -50,21 +74,7 @@
         color: white;
     }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 
-    .active, .dot:hover {
-        background-color: #717171;
-    }
 
 /* Fading animation */
 .fade {
