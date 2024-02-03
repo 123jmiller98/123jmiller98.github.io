@@ -4,7 +4,7 @@
 let startUrl = "JavaSubPages/index.html"; 
 let newurl;
 
-
+setUrl(startUrl);
 useSrc();
 
 function useSrc() {

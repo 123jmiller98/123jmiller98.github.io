@@ -1,13 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
-    "\\media",
     "\\pages",
+    "\\pages\\cppSubPages",
+    "\\pages\\JavaSubPages",
+    "\\pages\\JavaSubPages\\src",
     "\\projects",
-    "\\projects\\python",
-    "\\scripts"
+    "\\projects\\cpp",
+    "\\projects\\cpp\\Program6"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\pages\\pythonExample.html",
   "PreviewInSolutionExplorer": false
 }

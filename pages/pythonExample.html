@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title></title>
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/slideshow.js" defer></script>
+    <title>Falling Asteroids</title>
 </head>
 <body class="background">
 
@@ -16,20 +19,23 @@
         <a class="active" href="pythonExample.html">Python</a>
         <a href="htmlExample.html">HTML/CSS</a>
         <a href="csgoExample.html">CSGO</a>
-        
+
     </nav>
-   
+
 
     <div class="navContainer">
 
 
-        <div>
+        
+        <div class="pythonDownload">
+            <a href="../projects/python/falling_asteroids.py" download>
+                <button type="button" class="pythonBtn" > <h1>Falling Asteroids <i class="fa fa-download"></i></h1></button>
 
-            <h1>Falling Asteroids</h1>
-
-
-
+            </a>
         </div>
+
+        
+
 
 
         <embed id="python" src="../projects/python/falling_asteroids.txt">
@@ -38,6 +44,35 @@
 
 
 
-   
+    
+    <div class="pythonVideoContainer">
+
+        <div class="projectTitle">
+            <h1>Project Demo</h1>
+
+            <p id="shiftRight">This program is a game inspired by the classic game "Space Invaders". I completed this project for my scripting course final. </p>
+
+        </div>
+
+
+
+
+        <div class="mySlides fade">
+
+            <video id="pythonVideo" style="width:100%" controls>
+                <source src="../media/video/asteroids.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+
+
 </body>
 </html>

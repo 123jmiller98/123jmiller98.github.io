@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <script src="../scripts/cppnav.js" defer></script>
+    <script src="../scripts/slideshow.js" defer></script>
     <title></title>
 </head>
-<body>
+<body class="background">
 
 
     <nav class="topnav">
@@ -18,6 +21,59 @@
         <a href="csgoExample.html">CSGO</a>
     </nav>
 
-    <p> test</p>
+
+    <div class="navContainer">
+
+        <div id="sourceCode">
+
+            <h1>C++ Source Code</h1>
+
+        </div>
+
+
+        <nav class="javanav">
+
+            <a href="#" onclick="updateDiv()">
+
+                <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
+            </a>
+            <a href="../projects/cpp/Program6.zip" download>
+                <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
+            </a>
+        </nav>
+
+
+
+        <div id="java">
+
+
+            <embed id="javaembed" src="#">
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="pythonVideoContainer" id="cppVideoContainer">
+
+
+
+
+
+        <div class="mySlides fade" id="cppPicture">
+
+            <img src="../media/pictures/Program6.png" style="width:100%">
+
+        </div>
+
+
+
+
+    </div>
+
+
+
 </body>
 </html>

@@ -4,6 +4,8 @@
 
 /* Slideshow container */
 .slideshow-container {
+    position: relative;
+    top: 70px;
     background-color: #ffffff;
     border: 2px solid grey;
     border-radius: 15px;
@@ -13,8 +15,7 @@
     width: 52%;
     overflow: visible;
     float: right;
-    position: relative;
-    margin: 70px 2% 0 2%;
+    margin: 0 2% 0 2%;
     padding: 5px;
 }
 
@@ -23,7 +24,7 @@
 
     margin: 0 0 20px 0;
 }
-#shiftRight{
+p{
     margin: 0 1% 0 1%;
     
 }
@@ -35,9 +36,8 @@
   
 }
 
-img{
-
-  
+img {
+    border-radius: 5px;
 }
 
 /* Next & previous buttons */
