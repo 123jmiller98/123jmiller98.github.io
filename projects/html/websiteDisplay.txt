@@ -1,0 +1,1178 @@
+
+
+<!--- INDEX PAGE --->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/download.js" defer></script>
+
+
+    <title> My Portfolio</title>
+
+
+
+</head>
+<body class="background">
+    
+
+    <nav class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="pages/javaExample.html">Java</a>
+        <a href="pages/cppExample.html">C++</a>
+        <a href="pages/pythonExample.html">Python</a>
+        <a href="pages/htmlExample.html">HTML/CSS</a>
+        <a href="pages/csgoExample.html">CSGO</a>
+    </nav>
+
+
+    <aside class="myPortfolio">
+
+        <h1> My Portfolio</h1>
+
+        <div id="description">
+            <p>
+                Hello! Welcome to my portfolio. This website is a collection of some of the coding projects I have completed. Details for each project in several differing programming languages can be found by clicking on the navigation links at the top of the page, or on the video titles on the home page. Demonstration videos of the projects in action, as well as a slideshow and description of each project are also available for your convenience. The source code is available for viewing in browser as well as to download. Executable versions of these programs are available where relevant. Each one of these projects has been written solely by me, and demonstrate my understanding and abilities in each of the individual languages. The projects are:
+                <h2> <a href="pages/javaExample.html">Java Project – Check Deposit Database </a> </h2>
+                This is a project I wrote as a final for my CSIS 222 OOP with Java course. This program allows a user to save, edit,  and view checks in a database. This program uses Java integrated with SQL to store and edit the data.
+                <h2> <a href="pages/cppExample.html"> C++ project – Operator Overload Demo </a> </h2>
+                This program is a demonstration in C++ of object operator overloading as well as object inheritence. 
+
+                <h2> <a href="pages/pythonExample.html">Python project – Falling Asteroids </a></h2>
+                This program is a game inspired by the classic game "Space Invaders". I completed this project for my scripting course final. 
+
+                <h2> <a href="pages/htmlExample.html"> HTML, CSS, JavaScript – This Website</a></h2>
+                This website demonstrates my abilities in HTML, CSS, and JavaScript. Source code is available for viewing.
+
+                <h2> <a href="pages/csgoExample.html"> CSGO MAP – Hargrove’s Pattern Repair</a></h2>
+                This is a wingman map for the video game Counter-Strike: Global offensive. It was created in the Source SDK framework. The video trailer for this map was shot and edited by me.
+
+            </p>
+
+        </div>
+
+
+    </aside>
+
+    <div class="projectDemo">
+       
+        <div id="video">
+            <h2> <a href="pages/javaExample.html"> Java Project – Check Deposit Database</a></h2>
+            <video id="videoMargin" width="450" height="175" controls>
+                <source src="media/video/javaproject.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            <a href="projects/Java/csis222final.zip" download>
+                <button class="btn" id="btn1"><i class="fa fa-download"></i> Java Project</button>
+            </a>
+
+
+        </div>
+
+        <div id="video">
+            <h2> <a href="pages/cppExample.html"> C++ project – Operator Overload Demo </a></h2>
+            <video id="videoMargin" width="450" height="175" controls>
+                <source src="media/video/cppproject.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            <a href="projects/cpp/Program6.zip" download>
+                <button class="btn" id="btn1"><i class="fa fa-download"></i> C++ Project</button>
+            </a>
+        </div>
+
+        <div id="video">
+            <h2> <a href="pages/pythonExample.html">Python project – Falling Asteroids </a></h2>
+            <video id="videoMargin" width="450" height="175" controls>
+                <source src="media/video/fallingAsteroids.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <a href="projects/python/falling_asteroids.py" download>
+                <button type="button" class="btn"id="btn1"><i class="fa fa-download"></i> Python Project</button>
+                
+            </a>
+        </div>
+
+
+    </div>
+
+    
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!--- JAVA PAGE --->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <script src="../scripts/javanav.js" defer></script>
+    <script src="../scripts/slideshow.js" defer></script>
+    <title>Check Deposit Database</title>
+</head>
+<body class="background">
+
+
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a class="active" href="javaExample.html">Java</a>
+        <a href="cppExample.html">C++</a>
+        <a href="pythonExample.html">Python</a>
+        <a href="htmlExample.html">HTML/CSS</a>
+        <a href="csgoExample.html">CSGO</a>
+    </nav>
+
+    <div class="title1">
+
+        <h1 id="javaProject">Check Deposit Database</h1>
+
+
+    </div>
+
+    <div class="navContainer">
+
+        <div id="sourceCode">
+
+            <h1>Java Source Code</h1>
+
+        </div>
+
+
+        <nav class="javanav">
+            <a href="javaExample.html" onclick="setUrl('JavaSubPages/index.html')">
+                <img src="../media/pictures/src.png" height="75" width="75" alt="src" />
+            </a>
+            <a href="#" onclick="updateDiv()">
+
+                <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
+            </a>
+            <a href="../projects/Java/csis222final.zip" download>
+                <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
+            </a>
+        </nav>
+
+
+
+        <div id="java">
+
+            <!-- <iframe src="FrameGui.java"></iframe> -->
+            <!-- <embed src="FrameGui.java" width="500" height="400"></embed>-->
+            <!--  <object data="csis222final" width="800" height="600"></object>-->
+            <!-- -->
+
+
+            <embed id="javaembed" src="#">
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--- SLIDESHOW -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <div class="projectTitle">
+            <h1>Project Demo</h1>
+
+            <p>This is a project I wrote as a final for my CSIS 222 OOP with Java course. This program allows a user to save, edit,  and view checks in a database. This program uses Java integrated with SQL to store and edit the data.</p>
+
+        </div>
+
+
+
+
+        <!-- Full-width images with number and caption text -->
+
+        <div class="mySlides fade">
+
+            <video style="width:100%" controls>
+                <source src="../media/video/javaproject.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java4.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java5.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java6.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java7.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java8.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java9.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java10.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java11.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/java12.jpg" style="width:100%">
+
+        </div>
+
+
+
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!--- CPP PAGE --->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <script src="../scripts/cppnav.js" defer></script>
+    <script src="../scripts/slideshow.js" defer></script>
+    <title></title>
+</head>
+<body class="background">
+
+
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="javaExample.html">Java</a>
+        <a class="active" href="cppExample.html">C++</a>
+        <a href="pythonExample.html">Python</a>
+        <a href="htmlExample.html">HTML/CSS</a>
+        <a href="csgoExample.html">CSGO</a>
+    </nav>
+
+
+    <div class="navContainer">
+
+        <div id="sourceCode">
+
+            <h1>C++ Source Code</h1>
+
+        </div>
+
+
+        <nav class="javanav">
+
+            <a href="#" onclick="updateDiv()">
+
+                <img src="../media/pictures/backArrow.png" height="75" width="75" alt="back" />
+            </a>
+            <a href="../projects/cpp/Program6.zip" download>
+                <img src="../media/pictures/download.png" height="75" width="75" alt="back" />
+            </a>
+        </nav>
+
+
+
+        <div id="java">
+
+
+            <embed id="javaembed" src="#">
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="pythonVideoContainer" id="cppVideoContainer">
+
+
+
+
+
+        <div class="mySlides fade" id="cppPicture">
+
+            <img src="../media/pictures/Program6.png" style="width:100%">
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+<!--- PYTHON PAGE PAGE --->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/slideshow.js" defer></script>
+    <title>Falling Asteroids</title>
+</head>
+<body class="background">
+
+
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="javaExample.html">Java</a>
+        <a href="cppExample.html">C++</a>
+        <a class="active" href="pythonExample.html">Python</a>
+        <a href="htmlExample.html">HTML/CSS</a>
+        <a href="csgoExample.html">CSGO</a>
+
+    </nav>
+
+
+    <div class="navContainer">
+
+
+        
+        <div class="pythonDownload">
+            <a href="../projects/python/falling_asteroids.py" download>
+                <button type="button" class="pythonBtn" > <h1>Falling Asteroids <i class="fa fa-download"></i></h1></button>
+
+            </a>
+        </div>
+
+        
+
+
+
+        <embed id="python" src="../projects/python/falling_asteroids.txt">
+
+    </div>
+
+
+
+    
+    <div class="pythonVideoContainer">
+
+        <div class="projectTitle">
+            <h1>Project Demo</h1>
+
+            <p id="shiftRight">This program is a game inspired by the classic game "Space Invaders". I completed this project for my scripting course final. </p>
+
+        </div>
+
+
+
+
+        <div class="mySlides fade">
+
+            <video id="pythonVideo" style="width:100%" controls>
+                <source src="../media/video/asteroids.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+
+<!--- CSGO PAGE --->
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
+    <script src="../scripts/slideshow.js" defer></script>
+    <title>Hargrove's Pattern Repair</title>
+</head>
+<body class="background">
+
+
+    <nav class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="javaExample.html">Java</a>
+        <a href="cppExample.html">C++</a>
+        <a href="pythonExample.html">Python</a>
+        <a href="htmlExample.html">HTML/CSS</a>
+        <a class="active" href="csgoExample.html">CSGO</a>
+    </nav>
+
+    <div class="title2">
+
+        <h1 id="csgoProject">CSGO MAP</h1>
+        <h2 id="csgoProject1">Hargrove's Pattern Repair</h2>
+
+
+    </div>
+    
+
+    <div class="hprTrailerContainer">
+
+
+        <div id="hprTrailerTitle">
+
+            <h1>Video Trailer</h1>
+            <p>On this project I spent a year of consistent work creating this CSGO wingman map. This project taught me how to manage my time and work in reasonable increments over a long period of time. It also taught me patience and perseverance in learning a new skill. From this I have achieved proficiency using the Source SDK tool. I also practiced my editing and management skills creating the Map’s Trailer.</p>
+
+
+        </div>
+
+        <div id="hprTrailerVideo">
+
+
+
+
+
+            <div>
+
+                <video id="hprVideo" style="width:100%" controls>
+                    <source src="../media/video/hprtrailer.mp4" type="video/mp4" />
+                    <source src="../media/video/hprtrailerorig.mp4" type="video/mp4" />
+                    <source src="../media/video/hprtrailer.ogg" type="video/ogg" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!--- SLIDESHOW -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container-csgo">
+
+        <div class="projectTitle">
+
+
+
+
+        </div>
+
+
+
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair.jpg" style="width:100%">
+
+        </div>
+
+
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair4.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair5.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair6.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair7.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair8.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="../media/pictures/de_repair9.jpg" style="width:100%">
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" id="csgoNext" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" id="csgoNext" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html> 
+
+
+
+/* styles.css PAGE */
+
+body {
+    font-family: sans-serif;
+   
+}
+
+.background {
+    background-color: #e6f2ff;
+}
+
+
+.topnav {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+    overflow: visible;
+    left: 0%;
+    top: 0%;
+}
+
+.topnav a {
+  border-radius: 1px;
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #e6f2ff;
+        color: black;
+    }
+
+
+    /* header formating*/
+
+h1 {
+    font-family:sans-serif;
+    font-size: xx-large;
+    text-align: justify;
+    margin: 10px;
+    color: black;
+}
+h2 {
+    font-family: sans-serif;
+    text-align: left;
+    font-size: large;
+    padding: 0;
+}
+
+/*my Porfolio side*/
+.myPortfolio {
+    background-color: #ffffff;
+    display: block;
+    border: 2px solid grey;
+    border-radius: 15px;
+    float: left;
+    margin: 70px 0 0 2%;
+    padding: 5px;
+    width: 35%;
+}
+
+
+#description {
+    
+    text-align: justify;
+    font-family:sans-serif;
+    font-size:large;
+    margin: 10px ;
+}
+.projectDemo {
+    display: block;
+    float: right;
+    padding: 5px;
+    margin: 65px 0 0 1%;
+    width: 58%;
+    height: 10%;
+    text-align: left;
+    font-size: larger;
+    overflow: hidden;
+}
+#video {
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 0 0 0 2%;
+    margin: 0 0 1% 0;
+    width: 90%;
+}
+
+
+#videoMargin {
+    margin: 1%;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#btn1 {
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+    margin: 6% 0 0 10%;
+}
+.btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Java Project code*/
+
+.title1 {
+    
+    float: right;
+    position: relative;
+    margin: 85px 6% 0 0;
+}
+
+#javaProject{
+
+    font-size:70px;
+
+
+}
+
+.navContainer {
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    position: relative;
+    margin: 70px 0 0 2%;
+    padding: 5px;
+    width: 40%;
+    float: left;
+   
+    
+}
+
+
+#sourceCode {
+    position: relative;
+    left: 1%;
+}
+
+.javanav {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    left: 1%;
+    
+    color: black;
+}
+
+
+    .javanav a {
+        float: left;
+        text-align: center;
+        padding: 0 10px 0 10px;
+        font-family: 'Segoe UI';
+        font-size: 40px;
+    }
+
+    /* Change the color of links on hover */
+.javanav a:hover {
+     background-color: #ddd;
+ }
+
+#filetext1 {
+    float: right;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+#java {
+    float: left;
+    width: 98%;
+    height: 650px;
+    position: relative;
+    left: 1%;
+}
+
+#javaembed {
+    float:none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*  STYLE FOR C++ PAGE   */
+
+
+
+#filetext2 {
+    float: right;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+
+#unusedProfilePic {
+    float: left;
+    margin: 5px 20px 20px 5px;
+    width: 30%;
+    border-radius: 25px;
+    border: 3px solid black;
+}
+
+
+/*  styles for embedded index.html*/
+
+.src {
+    color: black;
+    width: 125px;
+    padding: 15px 25px 15px 15px;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+
+.filenav {
+    color: black;
+    width: 150px;
+    float: left;
+    position:fixed;
+    left: 1%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    
+    
+}
+
+    .filenav a {
+        float: left;
+        color: black;
+        padding: 15px 25px 15px 15px;
+        font-family:'Segoe UI';
+        font-size: 25px;
+        text-decoration: none;
+
+    }
+
+    /* Change the color of links on hover */
+    .filenav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+#filetext {
+    float:right;
+    position: relative;
+    left: 10px;
+  
+    
+    
+}
+
+/*    Python project   */
+
+.pythonBtn {
+    background-color: white;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* SLIDESHOW slideshow.css */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    top: 70px;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+    width: 52%;
+    overflow: visible;
+    float: right;
+    margin: 0 2% 0 2%;
+    padding: 5px;
+}
+
+.projectTitle {
+
+
+    margin: 0 0 20px 0;
+}
+p{
+    margin: 0 1% 0 1%;
+    
+}
+
+/* Hide the images by default */
+.mySlides {
+    margin: 1%;
+    display: none;
+  
+}
+
+img {
+    border-radius: 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.prev{
+    left:1%;
+}
+
+
+.next {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.examplePageVideo{
+
+
+    float:right;
+}
+
+
+.pythonBtn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+#python {
+    float: left;
+    width: 98%;
+    height: 750px;
+    position: relative;
+    left: 1%;
+    
+}
+
+#pythonVideo {
+    height: 675px;
+}
+
+.pythonVideoContainer {
+    float: right;
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+    width: 52%;
+    overflow: visible;
+    margin: 70px 2% 0 2%;
+    padding: 5px;
+}
+
+/* CSGO PAGE */
+
+.title2 {
+    float: right;
+    position: relative;
+    margin: 80px 22% 0 0;
+}
+
+#csgoProject {
+    font-size: 90px;
+}
+
+#csgoProject1 {
+    font-size: 29px;
+    position:relative;
+    left:5%;
+}
+
+#csgoNext{
+
+    color:white;
+}
+/*   HPR VIDEO   */
+.hprTrailerContainer {
+    float: left;
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+    width: 45%;
+    overflow: visible;
+    margin: 70px 2% 0 2%;
+    padding: 5px;
+}
+
+.slideshow-container-csgo {
+    position: relative;
+    top: 70px;
+    background-color: #ffffff;
+    border: 2px solid grey;
+    border-radius: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: large;
+    width: 45%;
+    overflow: visible;
+    float: right;
+    margin: 0 3% 0 2%;
+    padding: 5px;
+}
+
+#hprVideo{
+
+    height:605px;
+
+}
+
+/*  dao gui main tests styles*/
+
+.filenav1 {
+    color: green;
+    width: 250px;
+    float: left;
+    position: relative;
+    left: 1%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+}
+
+    .filenav1 a {
+        float: left;
+        color: black;
+        padding: 15px 25px 15px 15px;
+        font-family: 'Segoe UI';
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+        /* Change the color of links on hover */
+        .filenav1 a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+ /*    CPP SUB PAGES   */
+
+
+#cppNav {
+    position: relative;
+    left: 0%;
+}
+
+#cppVideoContainer{
+    width: 42%;
+    right: 5%;
+
+}
+

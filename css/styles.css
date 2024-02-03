@@ -386,6 +386,19 @@ h2 {
 
 }
 
+/* HTML PAGE FORMAT */
+
+.navContainerHtml {
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    position: relative;
+    margin: 70px 0 0 2%;
+    padding: 5px;
+    width: 45%;
+    float: left;
+}
+
 /*  dao gui main tests styles*/
 
 .filenav1 {
