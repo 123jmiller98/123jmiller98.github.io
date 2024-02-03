@@ -57,6 +57,12 @@ h2 {
     padding: 0;
 }
 
+#h2Porfolio{
+    position:relative;
+    left: 10px;
+   
+}
+
 /*my Porfolio side*/
 .myPortfolio {
     background-color: #ffffff;
